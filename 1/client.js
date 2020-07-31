@@ -20,6 +20,7 @@ class Request {
 
         this.headers['Content-Length'] = this.bodyText.length;
     }
+    
 
     send(connection) {
         return new Promise((resolve, reject) => {
